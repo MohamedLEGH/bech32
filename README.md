@@ -14,10 +14,12 @@ For more info see: https://pkgs.racket-lang.org/package/bech32
 
 ```racket
 > (require bech32)
-> (bech32-encode "0049c3307695e88874509b77ff859ab10064d1cb704733eea7")
-"17j29zgqUxMDTAgbBaZwEMFubHjnCrDpXp"
-> (bech32-decode "17j29zgqUxMDTAgbBaZwEMFubHjnCrDpXp")
-"0049c3307695e88874509b77ff859ab10064d1cb704733eea7"
+> (bech32-encode "751e76e8199196d454941c45d1b3a323f1433bd6751e76e8199196d454941c45d1b3a323f1433bd6")
+"bc1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7kt5nd6y"
+> (bech32-decode "bc1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7kt5nd6y")
+"751e76e8199196d454941c45d1b3a323f1433bd6751e76e8199196d454941c45d1b3a323f1433bd6"
+> (bech32-verify "bc1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7kt5nd6y")
+#t
 ```
 
 # Documentation
