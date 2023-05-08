@@ -1,5 +1,7 @@
-#lang racket
-(require racket/list)
+#lang racket/base
+(require racket/list
+         racket/format
+         racket/string)
 
 (module+ test
   (require rackunit
